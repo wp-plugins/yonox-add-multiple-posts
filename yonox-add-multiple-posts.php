@@ -6,7 +6,7 @@ Description: Add multiple posts by a simple ajax method.
 Version: 1.2
 Author: Yonox
 Author URI: http://yonoxpc.com
-License: General Public License
+License: GPLv2 or later
 */
 
 if ( !defined( 'ABSPATH' ) ) exit;
