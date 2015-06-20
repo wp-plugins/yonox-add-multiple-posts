@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Yonox Add Multiple Posts\n"
-"POT-Creation-Date: 2015-06-18 00:49+0100\n"
-"PO-Revision-Date: 2015-06-18 00:54+0100\n"
+"POT-Creation-Date: 2015-06-20 16:07+0100\n"
+"PO-Revision-Date: 2015-06-20 16:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ro_RO\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: ynxadmp-functions.php:13
 msgid "Process finished OK."
-msgstr "Proces terminat OK."
+msgstr "Proces încheiat cu succes."
 
 #: ynxadmp-functions.php:14
 msgid "No titles found."
-msgstr "Un s-au găsit titluri."
+msgstr "Nu s-au găsit titluri."
 
 #: ynxadmp-functions.php:19
 msgid "Option"
@@ -36,33 +36,73 @@ msgstr "Opțiune"
 msgid "Setting"
 msgstr "Setare"
 
-#: ynxadmp-functions.php:26
-msgid "Posts Titles:"
-msgstr "Titluri postări:"
+#: ynxadmp-functions.php:25
+msgid "Post Type:"
+msgstr "Tip Post:"
 
-#: ynxadmp-functions.php:27
+#: ynxadmp-functions.php:28
+msgid "Post"
+msgstr "Articol"
+
+#: ynxadmp-functions.php:29
+msgid "Page"
+msgstr "Pagină"
+
+#: ynxadmp-functions.php:34
+msgid "Status:"
+msgstr "Stare:"
+
+#: ynxadmp-functions.php:37
+msgid "Published"
+msgstr "Publicat"
+
+#: ynxadmp-functions.php:38
+msgid "Pending Review"
+msgstr "Așteaptă aprobare"
+
+#: ynxadmp-functions.php:39
+msgid "Draft"
+msgstr "Schiţă"
+
+#: ynxadmp-functions.php:44
+msgid "Posts Titles:"
+msgstr "Titluri Postări:"
+
+#: ynxadmp-functions.php:45
 msgid "One post on each line"
 msgstr "Un post pe fiecare linie"
 
-#: ynxadmp-functions.php:33
+#: ynxadmp-functions.php:51
+msgid "Category:"
+msgstr "Categoria:"
+
+#: ynxadmp-functions.php:63
+msgid "Parent:"
+msgstr "Nivel superior:"
+
+#: ynxadmp-functions.php:68
+msgid "none"
+msgstr "niciunul"
+
+#: ynxadmp-functions.php:76
 msgid "Author of Posts:"
 msgstr "Autor post-uri:"
 
-#: ynxadmp-functions.php:47
+#: ynxadmp-functions.php:90
 msgid "Progress Bar:"
 msgstr "Bară de progres:"
 
-#: ynxadmp-functions.php:56
+#: ynxadmp-functions.php:99
 msgid "Create Multiple Posts"
-msgstr "Crează multiple postări"
+msgstr "Crează Multiple Postări"
 
-#: ynxadmp-functions.php:57
+#: ynxadmp-functions.php:100
 msgid "Reset Form"
 msgstr "Resetare Formular"
 
 #: yonox-add-multiple-posts.php:35
 msgid "Yonox Add Multiple Posts"
-msgstr "Yonox Add Multiple Posts"
+msgstr "Yonox Adăugare Multiple Posturi"
 
 #: yonox-add-multiple-posts.php:35
 msgid "Yonox Add Posts"

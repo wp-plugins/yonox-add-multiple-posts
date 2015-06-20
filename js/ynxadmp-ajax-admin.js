@@ -45,7 +45,11 @@ jQuery(document).ready(function($) {
 			var dataYnxToCreatePosts = {
 				action			: 'addposts_ajaxfunc',
 				sendlocNonce	: YnxadmpAdminAjax.ynxadmpNonce,
+				typeEntry		: $('#ynxadmp_post_type').val(),
 				ynxadmpTitle	: this,
+				ynxadmpCategory	: $('#cat[name=cat]').val(),
+				ynxadmpParent	: $('#page_id[name=page_id]').val(),
+				statusEntry		: $('#ynxadmp_post_status').val(),
 				ynxadmpAuthor	: $('select[name=author_id] option:selected').val()
 			};
 		
@@ -63,6 +67,24 @@ jQuery(document).ready(function($) {
 		
 	});
 	
+	ynxadmp_pageopts = $('.ynxadmp_page-options').remove();
+	ynxadmp_postopts = $('.ynxadmp_post-options').remove();
+	if ($('#ynxadmp_post_type').val() == 'ynxadmp_type_post') {
+		$('#ynxadmp_titles_section').after(ynxadmp_postopts);
+	} else if ($('#ynxadmp_post_type').val() == 'ynxadmp_type_page') {
+		$('#ynxadmp_titles_section').after(ynxadmp_pageopts);
+	}
+	
+	$('#ynxadmp_post_type').change( function() {
+		if ($(this).val() == 'ynxadmp_type_post') {
+			$('.ynxadmp_page-options').remove();
+			$('#ynxadmp_titles_section').after(ynxadmp_postopts);
+		} else if ($(this).val() == 'ynxadmp_type_page') {
+			$('.ynxadmp_post-options').remove();
+			$('#ynxadmp_titles_section').after(ynxadmp_pageopts);
+		}
+	});
+	
 	$('#ynxadmp_progressbar').on('progressbarcomplete', function() {
 		$('#btn_ynxadmp_create_posts').fadeOut(1000);
 		$('#msg_finished').html('<p>Process finished OK with <b>'+ linesCount +'</b> posts created.</p>').slideDown('slow').delay(5000).slideUp('slow');
@@ -74,11 +96,7 @@ jQuery(document).ready(function($) {
 /* ===  Yonox Add Multiple Posts RESET FORM  === */	
 	$('#btn_ynxadmp_reset_form').click(function(event){
 		event.preventDefault();	
-		$('#ynxadmp_titles_texarea').val('');
-		$('#ynxadmp_progressbar').progressbar({ value: 0 });
-		$("#ynxadmp_progressbar > span").html('');
-		$('#btn_ynxadmp_create_posts').fadeIn(1000);
-		
+		window.location.reload(true);
 	});
 		
 });
