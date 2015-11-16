@@ -1,11 +1,11 @@
 <?php
 /**
 Plugin Name: Yonox Add Multiple Posts
-Plugin URI: http://yonoxpc.com
+Plugin URI: http://ekabb.com/yonox-add-multiple-posts/
 Description: Add multiple posts or pages by a simple ajax method.
 Version: 1.3
 Author: Yonox
-Author URI: http://yonoxpc.com
+Author URI: http://ekabb.com/yonox-add-multiple-posts/
 License: GPLv2 or later
 */
 
